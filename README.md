@@ -6,16 +6,17 @@ This repository contains the VHDL implementation of an Arithmetic Logic Unit (AL
 
 The ALU performs various arithmetic and logical operations based on the input selection signals. The selection signals determine the operation to be performed on the inputs A and B. The following table shows the operation corresponding to each selection signal combination:
 
-sel2 sel1 sel0 | Operation [A0..A4] [B0..B4]
--------------------------------- ______ ______
-0 0 0 | A + B \ / /
-0 0 1 | A - B [s0..s2] \ ALU /
-0 1 0 | min(a,b) ________/
-0 1 1 | max(A,B)
-1 0 0 | A > B [O0..O4]
-1 0 1 | A <= B
-1 1 0 | mod(a)
-1 1 1 | A*a
+ sel2  sel1  sel0   |     Operation            [A0..A4] [B0..B4]
+--------------------------------                  ______  ______
+    0     0     0   |  A  +  B                    \     \/     /
+    0     0     1   |  A  -  B         [s0..s2]    \    ALU   /
+    0     1     0   |  min(a,b)                     \________/
+    0     1     1   |  max(A,B)
+    1     0     0   |  A > B                         [O0..O4]
+    1     0     1   |  A <= B
+    1     1     0   |  mod(a)
+    1     1     1   |     A*a
+
 
 
 ## Project Details
