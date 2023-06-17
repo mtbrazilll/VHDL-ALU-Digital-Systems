@@ -1,0 +1,805 @@
+|alu
+A[0] => adder_4_bits:x0.x[0]
+A[0] => subtrai:x1.a[0]
+A[0] => mima:x3.a[0]
+A[0] => maiorque:x5.a[0]
+A[0] => modulo:x7.A[0]
+A[0] => produto:x8.a[0]
+A[1] => adder_4_bits:x0.x[1]
+A[1] => subtrai:x1.a[1]
+A[1] => mima:x3.a[1]
+A[1] => maiorque:x5.a[1]
+A[1] => modulo:x7.A[1]
+A[1] => produto:x8.a[1]
+A[2] => adder_4_bits:x0.x[2]
+A[2] => subtrai:x1.a[2]
+A[2] => mima:x3.a[2]
+A[2] => maiorque:x5.a[2]
+A[2] => modulo:x7.A[2]
+A[2] => produto:x8.a[2]
+A[3] => adder_4_bits:x0.x[3]
+A[3] => subtrai:x1.a[3]
+A[3] => mima:x3.a[3]
+A[3] => maiorque:x5.a[3]
+A[3] => modulo:x7.A[3]
+A[3] => produto:x8.a[3]
+A[4] => adder_4_bits:x0.x[4]
+A[4] => subtrai:x1.a[4]
+A[4] => mima:x3.a[4]
+A[4] => maiorque:x5.a[4]
+A[4] => modulo:x7.A[4]
+A[4] => produto:x8.a[4]
+B[0] => adder_4_bits:x0.y[0]
+B[0] => subtrai:x1.b[0]
+B[0] => mima:x3.b[0]
+B[0] => maiorque:x5.b[0]
+B[1] => adder_4_bits:x0.y[1]
+B[1] => subtrai:x1.b[1]
+B[1] => mima:x3.b[1]
+B[1] => maiorque:x5.b[1]
+B[2] => adder_4_bits:x0.y[2]
+B[2] => subtrai:x1.b[2]
+B[2] => mima:x3.b[2]
+B[2] => maiorque:x5.b[2]
+B[3] => adder_4_bits:x0.y[3]
+B[3] => subtrai:x1.b[3]
+B[3] => mima:x3.b[3]
+B[3] => maiorque:x5.b[3]
+B[4] => adder_4_bits:x0.y[4]
+B[4] => subtrai:x1.b[4]
+B[4] => mima:x3.b[4]
+B[4] => maiorque:x5.b[4]
+selection[0] => Mux1.IN6
+selection[0] => Mux0.IN9
+selection[0] => Mux13.IN10
+selection[0] => Mux14.IN10
+selection[0] => Mux15.IN4
+selection[0] => Mux16.IN4
+selection[0] => Mux17.IN4
+selection[0] => Mux18.IN4
+selection[0] => Mux19.IN4
+selection[0] => Mux20.IN10
+selection[1] => Mux1.IN5
+selection[1] => Mux0.IN8
+selection[1] => Mux13.IN9
+selection[1] => Mux14.IN9
+selection[1] => Mux15.IN3
+selection[1] => Mux16.IN3
+selection[1] => Mux17.IN3
+selection[1] => Mux18.IN3
+selection[1] => Mux19.IN3
+selection[1] => Mux20.IN9
+selection[2] => Mux1.IN4
+selection[2] => Mux0.IN7
+selection[2] => Mux13.IN8
+selection[2] => Mux14.IN8
+selection[2] => Mux15.IN2
+selection[2] => Mux16.IN2
+selection[2] => Mux17.IN2
+selection[2] => Mux18.IN2
+selection[2] => Mux19.IN2
+selection[2] => Mux20.IN8
+display1[0] << <GND>
+display1[1] << Mux5.DB_MAX_OUTPUT_PORT_TYPE
+display1[2] << Mux4.DB_MAX_OUTPUT_PORT_TYPE
+display1[3] << Mux3.DB_MAX_OUTPUT_PORT_TYPE
+display1[4] << <VCC>
+display1[5] << <VCC>
+display1[6] << Mux2.DB_MAX_OUTPUT_PORT_TYPE
+display2[0] << Mux12.DB_MAX_OUTPUT_PORT_TYPE
+display2[1] << Mux11.DB_MAX_OUTPUT_PORT_TYPE
+display2[2] << Mux10.DB_MAX_OUTPUT_PORT_TYPE
+display2[3] << Mux9.DB_MAX_OUTPUT_PORT_TYPE
+display2[4] << Mux8.DB_MAX_OUTPUT_PORT_TYPE
+display2[5] << Mux7.DB_MAX_OUTPUT_PORT_TYPE
+display2[6] << Mux6.DB_MAX_OUTPUT_PORT_TYPE
+overflow << Mux1.DB_MAX_OUTPUT_PORT_TYPE
+status << status.DB_MAX_OUTPUT_PORT_TYPE
+sinal << sinal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|adder_4_bits:x0
+x[0] => som_1a:x0.a
+x[1] => som_1a:x1.a
+x[2] => som_1a:x2.a
+x[3] => som_1a:x3.a
+x[4] => som_1a:x4.a
+y[0] => som_1a:x0.b
+y[1] => som_1a:x1.b
+y[2] => som_1a:x2.b
+y[3] => som_1a:x3.b
+y[4] => som_1a:x4.b
+ze => som_1a:x0.ve
+s[0] <= som_1a:x0.s
+s[1] <= som_1a:x1.s
+s[2] <= som_1a:x2.s
+s[3] <= som_1a:x3.s
+s[4] <= som_1a:x4.s
+zs <= som_1a:x4.vs
+buff <= buff.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|adder_4_bits:x0|som_1a:x0
+a => s.IN0
+a => vs.IN0
+a => vs.IN0
+b => s.IN1
+b => vs.IN1
+b => vs.IN0
+ve => s.IN1
+ve => vs.IN1
+ve => vs.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+vs <= vs.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|adder_4_bits:x0|som_1a:x1
+a => s.IN0
+a => vs.IN0
+a => vs.IN0
+b => s.IN1
+b => vs.IN1
+b => vs.IN0
+ve => s.IN1
+ve => vs.IN1
+ve => vs.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+vs <= vs.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|adder_4_bits:x0|som_1a:x2
+a => s.IN0
+a => vs.IN0
+a => vs.IN0
+b => s.IN1
+b => vs.IN1
+b => vs.IN0
+ve => s.IN1
+ve => vs.IN1
+ve => vs.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+vs <= vs.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|adder_4_bits:x0|som_1a:x3
+a => s.IN0
+a => vs.IN0
+a => vs.IN0
+b => s.IN1
+b => vs.IN1
+b => vs.IN0
+ve => s.IN1
+ve => vs.IN1
+ve => vs.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+vs <= vs.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|adder_4_bits:x0|som_1a:x4
+a => s.IN0
+a => vs.IN0
+a => vs.IN0
+b => s.IN1
+b => vs.IN1
+b => vs.IN0
+ve => s.IN1
+ve => vs.IN1
+ve => vs.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+vs <= vs.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|subtrai:x1
+a[0] => adder_4_bits:x1.x[0]
+a[1] => adder_4_bits:x1.x[1]
+a[2] => adder_4_bits:x1.x[2]
+a[3] => adder_4_bits:x1.x[3]
+a[4] => adder_4_bits:x1.x[4]
+b[0] => over.IN0
+b[0] => adder_4_bits:xo.y[0]
+b[1] => over.IN1
+b[1] => adder_4_bits:xo.y[1]
+b[2] => over.IN1
+b[2] => adder_4_bits:xo.y[2]
+b[3] => over.IN1
+b[3] => adder_4_bits:xo.y[3]
+b[4] => adder_4_bits:xo.y[4]
+s[0] <= adder_4_bits:x1.s[0]
+s[1] <= adder_4_bits:x1.s[1]
+s[2] <= adder_4_bits:x1.s[2]
+s[3] <= adder_4_bits:x1.s[3]
+s[4] <= adder_4_bits:x1.s[4]
+over <= over.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|subtrai:x1|adder_4_bits:xo
+x[0] => som_1a:x0.a
+x[1] => som_1a:x1.a
+x[2] => som_1a:x2.a
+x[3] => som_1a:x3.a
+x[4] => som_1a:x4.a
+y[0] => som_1a:x0.b
+y[1] => som_1a:x1.b
+y[2] => som_1a:x2.b
+y[3] => som_1a:x3.b
+y[4] => som_1a:x4.b
+ze => som_1a:x0.ve
+s[0] <= som_1a:x0.s
+s[1] <= som_1a:x1.s
+s[2] <= som_1a:x2.s
+s[3] <= som_1a:x3.s
+s[4] <= som_1a:x4.s
+zs <= som_1a:x4.vs
+buff <= buff.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|subtrai:x1|adder_4_bits:xo|som_1a:x0
+a => s.IN0
+a => vs.IN0
+a => vs.IN0
+b => s.IN1
+b => vs.IN1
+b => vs.IN0
+ve => s.IN1
+ve => vs.IN1
+ve => vs.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+vs <= vs.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|subtrai:x1|adder_4_bits:xo|som_1a:x1
+a => s.IN0
+a => vs.IN0
+a => vs.IN0
+b => s.IN1
+b => vs.IN1
+b => vs.IN0
+ve => s.IN1
+ve => vs.IN1
+ve => vs.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+vs <= vs.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|subtrai:x1|adder_4_bits:xo|som_1a:x2
+a => s.IN0
+a => vs.IN0
+a => vs.IN0
+b => s.IN1
+b => vs.IN1
+b => vs.IN0
+ve => s.IN1
+ve => vs.IN1
+ve => vs.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+vs <= vs.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|subtrai:x1|adder_4_bits:xo|som_1a:x3
+a => s.IN0
+a => vs.IN0
+a => vs.IN0
+b => s.IN1
+b => vs.IN1
+b => vs.IN0
+ve => s.IN1
+ve => vs.IN1
+ve => vs.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+vs <= vs.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|subtrai:x1|adder_4_bits:xo|som_1a:x4
+a => s.IN0
+a => vs.IN0
+a => vs.IN0
+b => s.IN1
+b => vs.IN1
+b => vs.IN0
+ve => s.IN1
+ve => vs.IN1
+ve => vs.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+vs <= vs.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|subtrai:x1|adder_4_bits:x1
+x[0] => som_1a:x0.a
+x[1] => som_1a:x1.a
+x[2] => som_1a:x2.a
+x[3] => som_1a:x3.a
+x[4] => som_1a:x4.a
+y[0] => som_1a:x0.b
+y[1] => som_1a:x1.b
+y[2] => som_1a:x2.b
+y[3] => som_1a:x3.b
+y[4] => som_1a:x4.b
+ze => som_1a:x0.ve
+s[0] <= som_1a:x0.s
+s[1] <= som_1a:x1.s
+s[2] <= som_1a:x2.s
+s[3] <= som_1a:x3.s
+s[4] <= som_1a:x4.s
+zs <= som_1a:x4.vs
+buff <= buff.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|subtrai:x1|adder_4_bits:x1|som_1a:x0
+a => s.IN0
+a => vs.IN0
+a => vs.IN0
+b => s.IN1
+b => vs.IN1
+b => vs.IN0
+ve => s.IN1
+ve => vs.IN1
+ve => vs.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+vs <= vs.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|subtrai:x1|adder_4_bits:x1|som_1a:x1
+a => s.IN0
+a => vs.IN0
+a => vs.IN0
+b => s.IN1
+b => vs.IN1
+b => vs.IN0
+ve => s.IN1
+ve => vs.IN1
+ve => vs.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+vs <= vs.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|subtrai:x1|adder_4_bits:x1|som_1a:x2
+a => s.IN0
+a => vs.IN0
+a => vs.IN0
+b => s.IN1
+b => vs.IN1
+b => vs.IN0
+ve => s.IN1
+ve => vs.IN1
+ve => vs.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+vs <= vs.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|subtrai:x1|adder_4_bits:x1|som_1a:x3
+a => s.IN0
+a => vs.IN0
+a => vs.IN0
+b => s.IN1
+b => vs.IN1
+b => vs.IN0
+ve => s.IN1
+ve => vs.IN1
+ve => vs.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+vs <= vs.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|subtrai:x1|adder_4_bits:x1|som_1a:x4
+a => s.IN0
+a => vs.IN0
+a => vs.IN0
+b => s.IN1
+b => vs.IN1
+b => vs.IN0
+ve => s.IN1
+ve => vs.IN1
+ve => vs.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+vs <= vs.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|mima:x3
+a[0] => Selector4.IN3
+a[0] => Selector9.IN3
+a[0] => maiorque:x.a[0]
+a[1] => Selector3.IN3
+a[1] => Selector8.IN3
+a[1] => maiorque:x.a[1]
+a[2] => Selector2.IN3
+a[2] => Selector7.IN3
+a[2] => maiorque:x.a[2]
+a[3] => Selector1.IN3
+a[3] => Selector6.IN3
+a[3] => maiorque:x.a[3]
+a[4] => Selector0.IN3
+a[4] => Selector5.IN3
+a[4] => maiorque:x.a[4]
+b[0] => Selector4.IN4
+b[0] => Selector9.IN4
+b[0] => maiorque:x.b[0]
+b[1] => Selector3.IN4
+b[1] => Selector8.IN4
+b[1] => maiorque:x.b[1]
+b[2] => Selector2.IN4
+b[2] => Selector7.IN4
+b[2] => maiorque:x.b[2]
+b[3] => Selector1.IN4
+b[3] => Selector6.IN4
+b[3] => maiorque:x.b[3]
+b[4] => Selector0.IN4
+b[4] => Selector5.IN4
+b[4] => maiorque:x.b[4]
+min[0] <= Selector4.DB_MAX_OUTPUT_PORT_TYPE
+min[1] <= Selector3.DB_MAX_OUTPUT_PORT_TYPE
+min[2] <= Selector2.DB_MAX_OUTPUT_PORT_TYPE
+min[3] <= Selector1.DB_MAX_OUTPUT_PORT_TYPE
+min[4] <= Selector0.DB_MAX_OUTPUT_PORT_TYPE
+max[0] <= Selector9.DB_MAX_OUTPUT_PORT_TYPE
+max[1] <= Selector8.DB_MAX_OUTPUT_PORT_TYPE
+max[2] <= Selector7.DB_MAX_OUTPUT_PORT_TYPE
+max[3] <= Selector6.DB_MAX_OUTPUT_PORT_TYPE
+max[4] <= Selector5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|mima:x3|maiorque:x
+a[0] => mais:x4.a
+a[1] => mais:x3.a
+a[2] => mais:x2.a
+a[3] => mais:x1.a
+a[4] => menos:x0.a
+b[0] => mais:x4.b
+b[1] => mais:x3.b
+b[2] => mais:x2.b
+b[3] => mais:x1.b
+b[4] => menos:x0.b
+status <= mais:x4.ogt
+
+
+|alu|mima:x3|maiorque:x|menos:x0
+a => llt.IN0
+a => lqe.IN0
+a => lgt.IN0
+a => lqe.IN0
+b => lgt.IN1
+b => lqe.IN1
+b => lqe.IN1
+b => llt.IN1
+lgt <= lgt.DB_MAX_OUTPUT_PORT_TYPE
+lqe <= lqe.DB_MAX_OUTPUT_PORT_TYPE
+llt <= llt.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|mima:x3|maiorque:x|mais:x1
+a => ogt.IN0
+a => oeq.IN0
+a => olt.IN0
+b => olt.IN1
+b => oeq.IN1
+b => ogt.IN1
+gt => ogt.IN1
+eq => ogt.IN1
+eq => olt.IN1
+eq => oeq.IN1
+lt => olt.IN1
+ogt <= ogt.DB_MAX_OUTPUT_PORT_TYPE
+oeq <= oeq.DB_MAX_OUTPUT_PORT_TYPE
+olt <= olt.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|mima:x3|maiorque:x|mais:x2
+a => ogt.IN0
+a => oeq.IN0
+a => olt.IN0
+b => olt.IN1
+b => oeq.IN1
+b => ogt.IN1
+gt => ogt.IN1
+eq => ogt.IN1
+eq => olt.IN1
+eq => oeq.IN1
+lt => olt.IN1
+ogt <= ogt.DB_MAX_OUTPUT_PORT_TYPE
+oeq <= oeq.DB_MAX_OUTPUT_PORT_TYPE
+olt <= olt.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|mima:x3|maiorque:x|mais:x3
+a => ogt.IN0
+a => oeq.IN0
+a => olt.IN0
+b => olt.IN1
+b => oeq.IN1
+b => ogt.IN1
+gt => ogt.IN1
+eq => ogt.IN1
+eq => olt.IN1
+eq => oeq.IN1
+lt => olt.IN1
+ogt <= ogt.DB_MAX_OUTPUT_PORT_TYPE
+oeq <= oeq.DB_MAX_OUTPUT_PORT_TYPE
+olt <= olt.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|mima:x3|maiorque:x|mais:x4
+a => ogt.IN0
+a => oeq.IN0
+a => olt.IN0
+b => olt.IN1
+b => oeq.IN1
+b => ogt.IN1
+gt => ogt.IN1
+eq => ogt.IN1
+eq => olt.IN1
+eq => oeq.IN1
+lt => olt.IN1
+ogt <= ogt.DB_MAX_OUTPUT_PORT_TYPE
+oeq <= oeq.DB_MAX_OUTPUT_PORT_TYPE
+olt <= olt.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|maiorque:x5
+a[0] => mais:x4.a
+a[1] => mais:x3.a
+a[2] => mais:x2.a
+a[3] => mais:x1.a
+a[4] => menos:x0.a
+b[0] => mais:x4.b
+b[1] => mais:x3.b
+b[2] => mais:x2.b
+b[3] => mais:x1.b
+b[4] => menos:x0.b
+status <= mais:x4.ogt
+
+
+|alu|maiorque:x5|menos:x0
+a => llt.IN0
+a => lqe.IN0
+a => lgt.IN0
+a => lqe.IN0
+b => lgt.IN1
+b => lqe.IN1
+b => lqe.IN1
+b => llt.IN1
+lgt <= lgt.DB_MAX_OUTPUT_PORT_TYPE
+lqe <= lqe.DB_MAX_OUTPUT_PORT_TYPE
+llt <= llt.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|maiorque:x5|mais:x1
+a => ogt.IN0
+a => oeq.IN0
+a => olt.IN0
+b => olt.IN1
+b => oeq.IN1
+b => ogt.IN1
+gt => ogt.IN1
+eq => ogt.IN1
+eq => olt.IN1
+eq => oeq.IN1
+lt => olt.IN1
+ogt <= ogt.DB_MAX_OUTPUT_PORT_TYPE
+oeq <= oeq.DB_MAX_OUTPUT_PORT_TYPE
+olt <= olt.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|maiorque:x5|mais:x2
+a => ogt.IN0
+a => oeq.IN0
+a => olt.IN0
+b => olt.IN1
+b => oeq.IN1
+b => ogt.IN1
+gt => ogt.IN1
+eq => ogt.IN1
+eq => olt.IN1
+eq => oeq.IN1
+lt => olt.IN1
+ogt <= ogt.DB_MAX_OUTPUT_PORT_TYPE
+oeq <= oeq.DB_MAX_OUTPUT_PORT_TYPE
+olt <= olt.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|maiorque:x5|mais:x3
+a => ogt.IN0
+a => oeq.IN0
+a => olt.IN0
+b => olt.IN1
+b => oeq.IN1
+b => ogt.IN1
+gt => ogt.IN1
+eq => ogt.IN1
+eq => olt.IN1
+eq => oeq.IN1
+lt => olt.IN1
+ogt <= ogt.DB_MAX_OUTPUT_PORT_TYPE
+oeq <= oeq.DB_MAX_OUTPUT_PORT_TYPE
+olt <= olt.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|maiorque:x5|mais:x4
+a => ogt.IN0
+a => oeq.IN0
+a => olt.IN0
+b => olt.IN1
+b => oeq.IN1
+b => ogt.IN1
+gt => ogt.IN1
+eq => ogt.IN1
+eq => olt.IN1
+eq => oeq.IN1
+lt => olt.IN1
+ogt <= ogt.DB_MAX_OUTPUT_PORT_TYPE
+oeq <= oeq.DB_MAX_OUTPUT_PORT_TYPE
+olt <= olt.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|modulo:x7
+A[0] => Selector4.IN4
+A[0] => buff.IN0
+A[0] => adder_4_bits:x0.x[0]
+A[1] => Selector3.IN4
+A[1] => buff.IN1
+A[1] => adder_4_bits:x0.x[1]
+A[2] => Selector2.IN4
+A[2] => buff.IN1
+A[2] => adder_4_bits:x0.x[2]
+A[3] => Selector1.IN4
+A[3] => buff.IN1
+A[3] => adder_4_bits:x0.x[3]
+A[4] => buff.IN1
+A[4] => Selector0.IN3
+A[4] => Selector0.IN4
+A[4] => Selector1.IN3
+A[4] => Selector2.IN3
+A[4] => Selector3.IN3
+A[4] => Selector4.IN3
+A[4] => adder_4_bits:x0.x[4]
+A[4] => Selector0.IN1
+A[4] => Selector1.IN1
+A[4] => Selector2.IN1
+A[4] => Selector3.IN1
+A[4] => Selector4.IN1
+buff <= buff.DB_MAX_OUTPUT_PORT_TYPE
+Q[0] <= Selector4.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Selector3.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Selector2.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Selector1.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= Selector0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|modulo:x7|adder_4_bits:x0
+x[0] => som_1a:x0.a
+x[1] => som_1a:x1.a
+x[2] => som_1a:x2.a
+x[3] => som_1a:x3.a
+x[4] => som_1a:x4.a
+y[0] => som_1a:x0.b
+y[1] => som_1a:x1.b
+y[2] => som_1a:x2.b
+y[3] => som_1a:x3.b
+y[4] => som_1a:x4.b
+ze => som_1a:x0.ve
+s[0] <= som_1a:x0.s
+s[1] <= som_1a:x1.s
+s[2] <= som_1a:x2.s
+s[3] <= som_1a:x3.s
+s[4] <= som_1a:x4.s
+zs <= som_1a:x4.vs
+buff <= buff.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|modulo:x7|adder_4_bits:x0|som_1a:x0
+a => s.IN0
+a => vs.IN0
+a => vs.IN0
+b => s.IN1
+b => vs.IN1
+b => vs.IN0
+ve => s.IN1
+ve => vs.IN1
+ve => vs.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+vs <= vs.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|modulo:x7|adder_4_bits:x0|som_1a:x1
+a => s.IN0
+a => vs.IN0
+a => vs.IN0
+b => s.IN1
+b => vs.IN1
+b => vs.IN0
+ve => s.IN1
+ve => vs.IN1
+ve => vs.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+vs <= vs.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|modulo:x7|adder_4_bits:x0|som_1a:x2
+a => s.IN0
+a => vs.IN0
+a => vs.IN0
+b => s.IN1
+b => vs.IN1
+b => vs.IN0
+ve => s.IN1
+ve => vs.IN1
+ve => vs.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+vs <= vs.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|modulo:x7|adder_4_bits:x0|som_1a:x3
+a => s.IN0
+a => vs.IN0
+a => vs.IN0
+b => s.IN1
+b => vs.IN1
+b => vs.IN0
+ve => s.IN1
+ve => vs.IN1
+ve => vs.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+vs <= vs.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|modulo:x7|adder_4_bits:x0|som_1a:x4
+a => s.IN0
+a => vs.IN0
+a => vs.IN0
+b => s.IN1
+b => vs.IN1
+b => vs.IN0
+ve => s.IN1
+ve => vs.IN1
+ve => vs.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+vs <= vs.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|produto:x8
+a[0] => Mux0.IN36
+a[0] => Equal0.IN4
+a[0] => Equal1.IN4
+a[0] => Equal2.IN3
+a[0] => Equal3.IN4
+a[0] => Equal4.IN4
+a[0] => Equal5.IN0
+a[0] => Equal6.IN4
+a[1] => Mux0.IN35
+a[1] => Equal0.IN3
+a[1] => Equal1.IN3
+a[1] => Equal2.IN4
+a[1] => Equal3.IN3
+a[1] => Equal4.IN3
+a[1] => Equal5.IN4
+a[1] => Equal6.IN0
+a[2] => Mux0.IN34
+a[2] => Equal0.IN2
+a[2] => Equal1.IN2
+a[2] => Equal2.IN2
+a[2] => Equal3.IN2
+a[2] => Equal4.IN2
+a[2] => Equal5.IN3
+a[2] => Equal6.IN3
+a[3] => Mux0.IN33
+a[3] => Equal0.IN1
+a[3] => Equal1.IN1
+a[3] => Equal2.IN1
+a[3] => Equal3.IN1
+a[3] => Equal4.IN1
+a[3] => Equal5.IN2
+a[3] => Equal6.IN2
+a[4] => Mux0.IN32
+a[4] => Equal0.IN0
+a[4] => Equal1.IN0
+a[4] => Equal2.IN0
+a[4] => Equal3.IN0
+a[4] => Equal4.IN0
+a[4] => Equal5.IN1
+a[4] => Equal6.IN1
+s[0] <= s[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+s[1] <= <GND>
+s[2] <= s[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+s[3] <= s[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+s[4] <= <GND>
+over <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+

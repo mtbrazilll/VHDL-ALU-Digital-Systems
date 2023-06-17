@@ -1,0 +1,58 @@
+--
+-- Curso de FPGA WR Kits Channel
+--
+--
+-- Aula 25: Somador de 4 bits a partir de componentes em VHDL
+--
+-- Kit FPGA EE02-SOQ
+--
+-- Adquira em http://www.professoremersonmartins.com.br/site/products/KIT-FPGA-%252d-EE02-%252d-SOQ.html
+--
+--
+-- Autor: Eng. Wagner Rambo     Data: Dezembro de 2015
+--
+-- www.wrkits.com.br | facebook.com/wrkits | youtube.com/user/canalwrkits
+--
+
+	entity adder_4_bits is													-- Declaraçao da entidade
+	port(x,y		:	in		bit_vector(3 downto 0);						-- Entradas do somador
+		  ze		:	in		bit;												-- "vem um"
+		  s		: out		bit_vector(3 downto 0);						-- Soma
+		  zs		: out		bit);												-- "vai um"
+	end adder_4_bits;															-- Final da declaraçao da entidade
+	
+	architecture hardware of adder_4_bits is							-- Declaração da arquitetura
+	
+		component som_1a														-- Declaraçao do componente
+		port(a,b,ve		:		in		bit;									-- entradas
+			  s,vs		:	  out		bit);									-- saidas
+		end component;															-- Final da declaração do componente
+		
+		signal v		: bit_vector(3 downto 1);							-- Sinal interno "vai um"
+		
+	begin
+	
+		x0:	som_1a	PORT MAP(     x(0),     y(0),      ze,         s(0),       v(1));
+		x1:   som_1a   PORT MAP(     x(1),     y(1),      v(1),       s(1),       v(2));
+		x2:   som_1a   PORT MAP( b=> y(2), a=> x(2), s => s(2), ve => v(2), vs => v(3));
+		X3:   som_1a   PORT MAP(     x(3),     y(3),      v(3),       s(3),        zs );
+		
+	end hardware;
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

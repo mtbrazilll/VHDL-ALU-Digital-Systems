@@ -1,0 +1,44 @@
+
+
+
+
+		
+		
+	library IEEE;
+	use IEEE.std_logic_1164.all;	entity modulo is
+	port(a		:		in	std_logic_vector(4 downto 0);
+		  q		:	  out std_logic_vector(4 downto 0));
+	end modulo;
+	
+	architecture func of som_1a is
+	component adder_4_bits is													 
+	port(x,y		:	in		std_logic_vector(4 downto 0);						-- Entradas do somador
+		  ze		:	in		std_logic;												-- "vem um"
+		  s		: out		std_logic_vector(4 downto 0);						-- Soma
+		  zs		: out		std_logic;												-- "vai um"
+		  buff   : out    std_logic);	
+	end component;
+	
+	signal aux : std_logic_vector(4 downto 0);
+	
+	begin
+		
+		aux <= not a;
+		x0:	adder_4_bits	PORT MAP(      aux,      "00001",      '0',         so,       z, over);
+		process(a)
+	begin
+			case a(0) is
+			
+			when "000" => O <= so; sinal <= so(4); overflow <= over;
+			
+			when '0' => q <= a;
+			when '1' => q <= aux;
+			
+			when others => q <= "ZZZZZ";
+			
+			end case;
+	end process;
+	
+		
+		
+	end func;

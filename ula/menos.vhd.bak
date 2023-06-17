@@ -1,0 +1,26 @@
+
+
+
+
+
+ 
+ 
+  
+  
+      library IEEE;
+		use IEEE.std_logic_1164.all;
+		
+		entity menos is port
+		(
+		     a,b,s : in std_logic;
+			  o     : out std_logic
+		);
+		end menos;
+		
+		architecture sate of menos is
+		
+				
+		begin
+		o <= (not b and (a or  s)) or (s and(a or b));
+		  
+	   end sate;

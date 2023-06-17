@@ -1,0 +1,91 @@
+|adder_4_bits
+x[0] => som_1a:x0.a
+x[1] => som_1a:x1.a
+x[2] => som_1a:x2.a
+x[3] => som_1a:x3.a
+x[4] => som_1a:x4.a
+y[0] => som_1a:x0.b
+y[1] => som_1a:x1.b
+y[2] => som_1a:x2.b
+y[3] => som_1a:x3.b
+y[4] => som_1a:x4.b
+ze => som_1a:x0.ve
+s[0] << som_1a:x0.s
+s[1] << som_1a:x1.s
+s[2] << som_1a:x2.s
+s[3] << som_1a:x3.s
+s[4] << som_1a:x4.s
+zs << som_1a:x4.vs
+buff << buff.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_4_bits|som_1a:x0
+a => s.IN0
+a => vs.IN0
+a => vs.IN0
+b => s.IN1
+b => vs.IN1
+b => vs.IN0
+ve => s.IN1
+ve => vs.IN1
+ve => vs.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+vs <= vs.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_4_bits|som_1a:x1
+a => s.IN0
+a => vs.IN0
+a => vs.IN0
+b => s.IN1
+b => vs.IN1
+b => vs.IN0
+ve => s.IN1
+ve => vs.IN1
+ve => vs.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+vs <= vs.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_4_bits|som_1a:x2
+a => s.IN0
+a => vs.IN0
+a => vs.IN0
+b => s.IN1
+b => vs.IN1
+b => vs.IN0
+ve => s.IN1
+ve => vs.IN1
+ve => vs.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+vs <= vs.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_4_bits|som_1a:x3
+a => s.IN0
+a => vs.IN0
+a => vs.IN0
+b => s.IN1
+b => vs.IN1
+b => vs.IN0
+ve => s.IN1
+ve => vs.IN1
+ve => vs.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+vs <= vs.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_4_bits|som_1a:x4
+a => s.IN0
+a => vs.IN0
+a => vs.IN0
+b => s.IN1
+b => vs.IN1
+b => vs.IN0
+ve => s.IN1
+ve => vs.IN1
+ve => vs.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+vs <= vs.DB_MAX_OUTPUT_PORT_TYPE
+
+

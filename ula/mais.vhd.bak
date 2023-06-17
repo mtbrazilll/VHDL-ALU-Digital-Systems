@@ -1,0 +1,21 @@
+
+
+
+
+			library IEEE;
+		use IEEE.std_logic_1164.all;
+		
+		entity mais is port
+		(
+		     a,b,s : in std_logic;
+			  o     : out std_logic
+		);
+		end mais;
+		
+		architecture safe of mais is
+		
+				
+		begin
+		o <= (b and (s or not a)) or (not a and(s or b));
+		  
+	   end safe;

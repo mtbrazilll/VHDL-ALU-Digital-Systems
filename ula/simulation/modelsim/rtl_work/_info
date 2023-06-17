@@ -1,0 +1,447 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Mateus Batista/Desktop/FPGA006_WR_Files/simulation/modelsim
+Eadder_4_bits
+Z1 w1632701686
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 1
+R0
+Z4 8C:/Users/Mateus Batista/Desktop/FPGA006_WR_Files/adder_4_bits.vhd
+Z5 FC:/Users/Mateus Batista/Desktop/FPGA006_WR_Files/adder_4_bits.vhd
+l0
+L5 1
+VM;L]5=ZV[Nn98Ki9DS0=R0
+!s100 EK8^<;:b4PW;=Ca5e`TZU3
+Z6 OV;C;2020.1;71
+31
+Z7 !s110 1632702536
+!i10b 1
+Z8 !s108 1632702536.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/Mateus Batista/Desktop/FPGA006_WR_Files/adder_4_bits.vhd|
+Z10 !s107 C:/Users/Mateus Batista/Desktop/FPGA006_WR_Files/adder_4_bits.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Ahardware
+R2
+R3
+DEx4 work 12 adder_4_bits 0 22 M;L]5=ZV[Nn98Ki9DS0=R0
+!i122 1
+l23
+L13 21
+Vb=MEQLHdIP[onImTf;1gZ1
+!s100 ;n6UIP5>L4<Q9SdK5Z0z00
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Ealu
+Z13 w1632701684
+Z14 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z15 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+R2
+R3
+!i122 2
+R0
+Z16 8C:/Users/Mateus Batista/Desktop/FPGA006_WR_Files/alu.vhd
+Z17 FC:/Users/Mateus Batista/Desktop/FPGA006_WR_Files/alu.vhd
+l0
+L25 1
+VW<EGf_z7I?J8bBZN4SNoK0
+!s100 E_aFHo?0I2L?K9REDCjIO1
+R6
+31
+R7
+!i10b 1
+R8
+Z18 !s90 -reportprogress|300|-93|-work|work|C:/Users/Mateus Batista/Desktop/FPGA006_WR_Files/alu.vhd|
+Z19 !s107 C:/Users/Mateus Batista/Desktop/FPGA006_WR_Files/alu.vhd|
+!i113 1
+R11
+R12
+Ahardware
+R14
+R15
+R2
+R3
+DEx4 work 3 alu 0 22 W<EGf_z7I?J8bBZN4SNoK0
+!i122 2
+l106
+L39 143
+VKK:z:ZnGSgWUF7J8KE;;E0
+!s100 <KWSl^66TfQ[5<K7TU[E23
+R6
+31
+R7
+!i10b 1
+R8
+R18
+R19
+!i113 1
+R11
+R12
+Emaiorque
+Z20 w1632650037
+R2
+R3
+!i122 6
+R0
+Z21 8C:/Users/Mateus Batista/Desktop/FPGA006_WR_Files/maiorque.vhd
+Z22 FC:/Users/Mateus Batista/Desktop/FPGA006_WR_Files/maiorque.vhd
+l0
+L11 1
+V1gFO6dBdnJz?AP97VdFRd2
+!s100 @iLienB:LGVW6SLM]:^492
+R6
+31
+Z23 !s110 1632702538
+!i10b 1
+Z24 !s108 1632702537.000000
+Z25 !s90 -reportprogress|300|-93|-work|work|C:/Users/Mateus Batista/Desktop/FPGA006_WR_Files/maiorque.vhd|
+Z26 !s107 C:/Users/Mateus Batista/Desktop/FPGA006_WR_Files/maiorque.vhd|
+!i113 1
+R11
+R12
+Amec
+R2
+R3
+DEx4 work 8 maiorque 0 22 1gFO6dBdnJz?AP97VdFRd2
+!i122 6
+l40
+L18 34
+VFU0PQXzCBoV^@hI[]Me>Q1
+!s100 ?P7nRoCOUSiOibTKC3koN1
+R6
+31
+R23
+!i10b 1
+R24
+R25
+R26
+!i113 1
+R11
+R12
+Emais
+Z27 w1632644270
+R2
+R3
+!i122 4
+R0
+Z28 8C:/Users/Mateus Batista/Desktop/FPGA006_WR_Files/mais.vhd
+Z29 FC:/Users/Mateus Batista/Desktop/FPGA006_WR_Files/mais.vhd
+l0
+L8 1
+V:fmMogPY1FK5nVID<B85=0
+!s100 O0IIc^VdP7eEKaRO9b3941
+R6
+31
+Z30 !s110 1632702537
+!i10b 1
+R24
+Z31 !s90 -reportprogress|300|-93|-work|work|C:/Users/Mateus Batista/Desktop/FPGA006_WR_Files/mais.vhd|
+Z32 !s107 C:/Users/Mateus Batista/Desktop/FPGA006_WR_Files/mais.vhd|
+!i113 1
+R11
+R12
+Asafe
+R2
+R3
+DEx4 work 4 mais 0 22 :fmMogPY1FK5nVID<B85=0
+!i122 4
+l18
+L15 9
+VXA4O5C<jDK[H;LD4zCiZb1
+!s100 4b0_?9oB3^NcEclVnZ[k;3
+R6
+31
+R30
+!i10b 1
+R24
+R31
+R32
+!i113 1
+R11
+R12
+Emenos
+Z33 w1632648333
+R2
+R3
+!i122 5
+R0
+Z34 8C:/Users/Mateus Batista/Desktop/FPGA006_WR_Files/menos.vhd
+Z35 FC:/Users/Mateus Batista/Desktop/FPGA006_WR_Files/menos.vhd
+l0
+Z36 L14 1
+V57][>g;@RYkVA@fTDzKjg0
+!s100 V:_Q9??f^W^fiBa^FJOIR0
+R6
+31
+R30
+!i10b 1
+R24
+Z37 !s90 -reportprogress|300|-93|-work|work|C:/Users/Mateus Batista/Desktop/FPGA006_WR_Files/menos.vhd|
+Z38 !s107 C:/Users/Mateus Batista/Desktop/FPGA006_WR_Files/menos.vhd|
+!i113 1
+R11
+R12
+Asate
+R2
+R3
+DEx4 work 5 menos 0 22 57][>g;@RYkVA@fTDzKjg0
+!i122 5
+l24
+L21 9
+V=A=8mE:l5glbYj_mN[QE>3
+!s100 ng@XaF:5`b<oQBk`b]Mh31
+R6
+31
+R30
+!i10b 1
+R24
+R37
+R38
+!i113 1
+R11
+R12
+Emima
+Z39 w1632651233
+R2
+R3
+!i122 7
+R0
+Z40 8C:/Users/Mateus Batista/Desktop/FPGA006_WR_Files/mima.vhd
+Z41 FC:/Users/Mateus Batista/Desktop/FPGA006_WR_Files/mima.vhd
+l0
+L9 1
+Vmd2^_UgTYW<b2nbo0VG6b3
+!s100 :6loM?mRJRXN<<jD5;60H2
+R6
+31
+R23
+!i10b 1
+Z42 !s108 1632702538.000000
+Z43 !s90 -reportprogress|300|-93|-work|work|C:/Users/Mateus Batista/Desktop/FPGA006_WR_Files/mima.vhd|
+Z44 !s107 C:/Users/Mateus Batista/Desktop/FPGA006_WR_Files/mima.vhd|
+!i113 1
+R11
+R12
+Alabor
+R2
+R3
+DEx4 work 4 mima 0 22 md2^_UgTYW<b2nbo0VG6b3
+!i122 7
+l27
+L16 23
+VZ4iA6OR;Ab?]Y_dLHj`=o2
+!s100 bTngjGkoP47JZJ:hS4S843
+R6
+31
+R23
+!i10b 1
+R42
+R43
+R44
+!i113 1
+R11
+R12
+Emodulo
+Z45 w1632629864
+R2
+R3
+!i122 3
+R0
+Z46 8C:/Users/Mateus Batista/Desktop/FPGA006_WR_Files/modulo.vhd
+Z47 FC:/Users/Mateus Batista/Desktop/FPGA006_WR_Files/modulo.vhd
+l0
+L7 1
+VaBZWohBn>DBE[i0QbE[`B2
+!s100 2JGJC3nTfmPdZ20GKJWg72
+R6
+31
+R30
+!i10b 1
+R24
+Z48 !s90 -reportprogress|300|-93|-work|work|C:/Users/Mateus Batista/Desktop/FPGA006_WR_Files/modulo.vhd|
+Z49 !s107 C:/Users/Mateus Batista/Desktop/FPGA006_WR_Files/modulo.vhd|
+!i113 1
+R11
+R12
+Afunc
+R2
+R3
+DEx4 work 6 modulo 0 22 aBZWohBn>DBE[i0QbE[`B2
+!i122 3
+l33
+L16 26
+V03^QS8cCI:[j2gzKN3lYf1
+!s100 X@5V<GGnR>YD72]mQW6Pn2
+R6
+31
+R30
+!i10b 1
+R24
+R48
+R49
+!i113 1
+R11
+R12
+Eproduto
+Z50 w1632700153
+R2
+R3
+!i122 8
+R0
+Z51 8C:/Users/Mateus Batista/Desktop/FPGA006_WR_Files/produto.vhd
+Z52 FC:/Users/Mateus Batista/Desktop/FPGA006_WR_Files/produto.vhd
+l0
+L10 1
+V`EMKnl@0GRQc>L031N8X70
+!s100 f6<<3oSI0i3Xz>UgkcXW_3
+R6
+31
+Z53 !s110 1632702539
+!i10b 1
+Z54 !s108 1632702539.000000
+Z55 !s90 -reportprogress|300|-93|-work|work|C:/Users/Mateus Batista/Desktop/FPGA006_WR_Files/produto.vhd|
+Z56 !s107 C:/Users/Mateus Batista/Desktop/FPGA006_WR_Files/produto.vhd|
+!i113 1
+R11
+R12
+Atrab
+R2
+R3
+DEx4 work 7 produto 0 22 `EMKnl@0GRQc>L031N8X70
+!i122 8
+l22
+L18 37
+V6QSH_h_9f:DoA19h_`QV=1
+!s100 mNdnbi<mQ0<A?OFIe0bd81
+R6
+31
+R53
+!i10b 1
+R54
+R55
+R56
+!i113 1
+R11
+R12
+Esom_1a
+Z57 w1632616295
+R2
+R3
+!i122 0
+R0
+Z58 8C:/Users/Mateus Batista/Desktop/FPGA006_WR_Files/som_1a.vhd
+Z59 FC:/Users/Mateus Batista/Desktop/FPGA006_WR_Files/som_1a.vhd
+l0
+L17 1
+VI`bKajUI>HR[F8A<?=Gb81
+!s100 A2zm@?coGd8LaX5^P`F;F1
+R6
+31
+Z60 !s110 1632702535
+!i10b 1
+Z61 !s108 1632702535.000000
+Z62 !s90 -reportprogress|300|-93|-work|work|C:/Users/Mateus Batista/Desktop/FPGA006_WR_Files/som_1a.vhd|
+Z63 !s107 C:/Users/Mateus Batista/Desktop/FPGA006_WR_Files/som_1a.vhd|
+!i113 1
+R11
+R12
+Asomador
+R2
+R3
+DEx4 work 6 som_1a 0 22 I`bKajUI>HR[F8A<?=Gb81
+!i122 0
+l23
+L22 5
+VK5W::3@aLUO:=M^K1G:l41
+!s100 zV1k`JkR6[2gIb3?0kYi<2
+R6
+31
+R60
+!i10b 1
+R61
+R62
+R63
+!i113 1
+R11
+R12
+Esubtrai
+Z64 w1632699502
+R2
+R3
+!i122 9
+R0
+Z65 8C:/Users/Mateus Batista/Desktop/FPGA006_WR_Files/subtrai.vhd
+Z66 FC:/Users/Mateus Batista/Desktop/FPGA006_WR_Files/subtrai.vhd
+l0
+R36
+V^7WSOCZn3nIQ[E=K@7VO60
+!s100 ^2dfe@Old>iD5Q6]Jj3771
+R6
+31
+R53
+!i10b 1
+R54
+Z67 !s90 -reportprogress|300|-93|-work|work|C:/Users/Mateus Batista/Desktop/FPGA006_WR_Files/subtrai.vhd|
+Z68 !s107 C:/Users/Mateus Batista/Desktop/FPGA006_WR_Files/subtrai.vhd|
+!i113 1
+R11
+R12
+Asate
+R2
+R3
+DEx4 work 7 subtrai 0 22 ^7WSOCZn3nIQ[E=K@7VO60
+!i122 9
+l36
+L22 22
+VADzZ1hQl0i=WTLSTU?^Qb3
+!s100 A1Xo7SYzEOS?hPU]DYFPm1
+R6
+31
+R53
+!i10b 1
+R54
+R67
+R68
+!i113 1
+R11
+R12
+Etestbench_ula
+w1632702362
+R2
+R3
+!i122 10
+R0
+8C:/Users/Mateus Batista/Desktop/FPGA006_WR_Files/testbench_ula.vhd
+FC:/Users/Mateus Batista/Desktop/FPGA006_WR_Files/testbench_ula.vhd
+l0
+L4 1
+VNCciC;HCePm9YWVU[`:d23
+!s100 _SKd>Ti;cB9nL=1eVk:QA2
+R6
+31
+R53
+!i10b 1
+R54
+!s90 -reportprogress|300|-93|-work|work|C:/Users/Mateus Batista/Desktop/FPGA006_WR_Files/testbench_ula.vhd|
+!s107 C:/Users/Mateus Batista/Desktop/FPGA006_WR_Files/testbench_ula.vhd|
+!i113 1
+R11
+R12

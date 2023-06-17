@@ -1,0 +1,77 @@
+m255
+K4
+z2
+!s11e MIXED_VERSIONS
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Mateus Batista/Desktop/FPGA006_WR_Files/simulation/modelsim
+valu
+Z1 !s110 1632718390
+!i10b 1
+!s100 1YmlNX6c=7KD`^9Aa=NCN0
+!s11b Dg1SIo80bB@j0V0VzS_@n1
+ID=i8Nc7j9<T?YlJ@f_Mb03
+VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1632718375
+8alu.vo
+Falu.vo
+!i122 0
+L0 32 1910
+OV;L;2020.1;71
+r1
+!s85 0
+31
+Z2 !s108 1632718390.000000
+!s107 alu.vo|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|alu.vo|
+!i113 1
+o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+.
+tCvgOpt 0
+Etestbench_ula
+Z3 w1632718287
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 1
+R0
+Z6 8C:/Users/Mateus Batista/Desktop/FPGA006_WR_Files/testbench_ula.vhd
+Z7 FC:/Users/Mateus Batista/Desktop/FPGA006_WR_Files/testbench_ula.vhd
+l0
+L4 1
+VNCciC;HCePm9YWVU[`:d23
+!s100 _SKd>Ti;cB9nL=1eVk:QA2
+Z8 OV;C;2020.1;71
+31
+R1
+!i10b 1
+R2
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/Mateus Batista/Desktop/FPGA006_WR_Files/testbench_ula.vhd|
+!s107 C:/Users/Mateus Batista/Desktop/FPGA006_WR_Files/testbench_ula.vhd|
+!i113 1
+Z10 o-93 -work work
+Z11 tExplicit 1 CvgOpt 0
+Atb_arch_ula
+R4
+R5
+DEx4 work 13 testbench_ula 0 22 NCciC;HCePm9YWVU[`:d23
+!i122 1
+l35
+L10 221
+V:GfaBk4J_AB=@_1_G]hc[3
+!s100 MjMFWQiNm:j0b[lg?22em3
+R8
+31
+R1
+!i10b 1
+R2
+R9
+Z12 !s107 C:/Users/Mateus Batista/Desktop/FPGA006_WR_Files/testbench_ula.vhd|
+!i113 1
+R10
+R11

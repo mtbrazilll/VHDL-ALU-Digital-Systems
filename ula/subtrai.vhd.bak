@@ -1,0 +1,42 @@
+
+
+
+
+    
+	 
+	 
+	  
+	    
+		 	
+		library IEEE;
+		use IEEE.std_logic_1164.all;
+		
+		entity subtrai is port
+		(
+		     a,b  : in   std_logic_vector(0 downto 4);
+			  s  : out  std_logic_vector(0 downto 4)
+			  over: out std_logic;
+		);
+		end subtrai;
+		
+		architecture sate of subtrai is
+		
+		component adder_4_bits is													 
+				port(x,y		:	in		std_logic_vector(4 downto 0);					
+		  ze		:	in		std_logic;											
+		  s		: out		std_logic_vector(4 downto 0);					
+		  zs		: out		std_logic;												
+		  buff   : out    std_logic);	
+				end component;
+		signal aux: std_logic_vector(0 downto 4);
+		signal barra: std_logic_vector(0 downto 4);
+		signal lixo: std_logic_vector(0 downto 4);
+				
+		begin
+		
+		xo : adder_4_bits por map ("00001", aux, barra, lixo(1), lixo(0));
+		xo : adder_4_bits por map (a, barra, s, lixo(2), over);
+		
+		aux <= not b;
+		
+	   end sate;

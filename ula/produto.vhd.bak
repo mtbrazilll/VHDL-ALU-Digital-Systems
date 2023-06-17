@@ -1,0 +1,38 @@
+
+
+		
+		
+						
+						
+		library IEEE;
+		use IEEE.std_logic_1164.all;
+		
+		entity produto is port
+		(
+		     a: in std_logic_vector(4 downto 0);
+			  s     : out std_logic_vector(4 downto 0)
+		);
+		end produto;
+		
+		architecture trab of produto  is
+		
+	 
+				
+		begin
+
+		
+		process(a)
+		
+		begin 
+		
+			if    (a = "00000") then s <= "00000";
+			elsif (a = "00001") then s <= "00001";
+			elsif (a = "00010") then s <= "00100";
+			elsif (a = "00011") then s <= "01001";
+			elsif (a = "11111") then s <= "00001";
+			elsif (a = "11110") then s <= "00100";
+			elsif (a = "11101") then s <= "01001";
+			end if;
+			end process;
+		
+	   end trab;
